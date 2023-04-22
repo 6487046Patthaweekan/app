@@ -25,13 +25,19 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         "/": (BuildContext context) => profile_guest_1(),
         "/landing": (BuildContext context) => const LandingPage(),
-        "/login": (BuildContext context) => Login_Page_1(email: '', password: '',),
-        "/register": (BuildContext context) => RegisterInfoPage(email: '', password: '',),
+        "/login": (BuildContext context) => Login_Page_1(
+              email: '',
+              password: '',
+            ),
+        "/register": (BuildContext context) => RegisterInfoPage(
+              email: '',
+              password: '',
+            ),
 
         // "auth" :(BuildContext context) => const  Auth()
         // "/home": (BuildContext context) => const HomePage(),
       },
-      initialRoute: "/landing",
+      initialRoute: "/",
       debugShowCheckedModeBanner: false,
     );
   }

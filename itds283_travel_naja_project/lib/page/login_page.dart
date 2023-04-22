@@ -142,7 +142,8 @@ class Login_Page_1 extends StatelessWidget {
                                   )),
                         );
                       },
-                      child: Text('Login'),
+                      child: Text(style: TextStyle(
+                      color: Color.fromARGB(255, 255, 255, 255)),'Login'),
                       style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.0),
