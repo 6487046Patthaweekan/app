@@ -2,8 +2,8 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
+import 'package:itds283_travel_naja_project/page/hotels.dart';
 import 'package:itds283_travel_naja_project/page/profile_guest_1.dart';
-import 'package:itds283_travel_naja_project/page/reservation_page.dart';
 import 'package:itds283_travel_naja_project/page/register_payment_page.dart';
 import 'package:itds283_travel_naja_project/page/register_info_page.dart';
 // import 'package:week12/page/home_page.dart';
@@ -82,7 +82,7 @@ class ProfilePage extends StatelessWidget {
                       onPressed: () {
                         Navigator.of(context).push(
                           MaterialPageRoute(
-                              builder: (context) => Reservation(
+                              builder: (context) => HotelsListPage(
                                     
                                   )),
                         );

@@ -215,7 +215,8 @@ class RegisterPayment extends StatelessWidget {
                                   )),
                         );
                       },
-                      child: Text('NEXT'),
+                      child: Text(style: TextStyle(
+                      color: Color.fromARGB(255, 255, 255, 255)),'NEXT'),
                       style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30.0),

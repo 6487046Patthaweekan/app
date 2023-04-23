@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:itds283_travel_naja_project/page/landing_page.dart';
+import 'package:itds283_travel_naja_project/page/hotel_detail.dart';
+import 'package:itds283_travel_naja_project/page/hotels.dart';
+
 import 'package:itds283_travel_naja_project/page/login_page.dart';
 import 'package:itds283_travel_naja_project/page/profile_guest_1.dart';
 import 'package:itds283_travel_naja_project/page/register_info_page.dart';
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: <String, WidgetBuilder>{
         "/": (BuildContext context) => profile_guest_1(),
-        "/landing": (BuildContext context) => const LandingPage(),
+        
         "/login": (BuildContext context) => Login_Page_1(
               email: '',
               password: '',
@@ -33,7 +35,11 @@ class MyApp extends StatelessWidget {
               email: '',
               password: '',
             ),
-
+        "/detail": (BuildContext context) => HotelDetail(image: '',name: '',location: '',description: '',price: '',rating: '',Recently_booked:'',
+              )
+              ,
+              "/hotel": (BuildContext context) => HotelsListPage( )
+              ,
         // "auth" :(BuildContext context) => const  Auth()
         // "/home": (BuildContext context) => const HomePage(),
       },
